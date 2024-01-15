@@ -1,0 +1,29 @@
+pipeline {
+agent any 
+stages {
+stage('Build'){
+steps {
+sh '''
+sleep 5
+echo "this is build stage"
+'''
+}
+}
+stage('deploy'){
+steps {
+sh '''
+sleep 5
+echo "this is deploy stage"
+'''
+}
+}
+stage('Test'){
+steps {
+sh '''
+sleep 5
+echo "this is Test stage"
+'''
+}
+}
+}
+}
