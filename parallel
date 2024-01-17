@@ -14,9 +14,7 @@ echo "this is test1"
 }
 }
 }
-steps {
-echo "this is test"
-}
+
 }
 }
 }
