@@ -19,6 +19,21 @@ echo "this is test2"
 }
 }
 }
+parallel 
+{
+stage ('test3')
+{
+steps {
+echo "this is test1"
+}
+}
+stage ('test4')
+{
+steps{
+echo "this is test2"
+}
+}
+}
 }
 }
 }
