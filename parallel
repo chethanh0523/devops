@@ -13,6 +13,12 @@ steps {
 echo "this is test1"
 }
 }
+stage('Test2')
+{
+steps {
+echo "this is test2
+}
+}
 }
 
 }
