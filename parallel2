@@ -19,6 +19,8 @@ echo "this is test2"
 }
 }
 }
+stage (deploy)
+{
 parallel 
 {
 stage ('test3')
@@ -31,6 +33,7 @@ stage ('test4')
 {
 steps{
 echo "this is test2"
+}
 }
 }
 }
