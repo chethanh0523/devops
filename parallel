@@ -3,7 +3,8 @@ pipeline
 agent any
 stages
 {
-
+stage ('Test')
+{
 parallel 
 {
 stage ('Test1')
@@ -22,4 +23,4 @@ echo "this is test2"
 
 }
 }
-
+}
