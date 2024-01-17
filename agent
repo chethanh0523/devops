@@ -1,0 +1,34 @@
+pipeline
+{
+agent none
+stages
+{
+stage ('build')
+{
+agent {label 'node1'}
+steps {
+sh '''
+sleep 5
+echo "this is build"
+'''
+}
+}
+stage ('deploy')
+{
+agent {label 'pipe'}
+steps
+{
+sh '''
+sleep 5
+echo "this is deploy"
+'''
+}
+}
+}
+}
+
+
+
+
+
+}
