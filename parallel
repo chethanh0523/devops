@@ -1,0 +1,22 @@
+pipeline
+{
+agent any
+stages
+{
+stage ('Test')
+{
+parallel 
+{
+stage ('Test1')
+{
+steps {
+echo "this is test1"
+}
+}
+}
+steps {
+echo "this is test"
+}
+}
+}
+}
